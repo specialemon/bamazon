@@ -45,3 +45,7 @@ input {
 .cartList, .cartHead {
     text-align: center;
 }
+
+.cartDiv {
+    margin-bottom: 15px;
+}

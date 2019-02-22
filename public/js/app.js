@@ -82,16 +82,26 @@ const addToCart = function () {
             const item = new Item(data.product_name, amount, data.price);
             if (userCart[data.id] !== undefined) {
                 if ((userCart[data.id].amount + amount) > data.stock_quantity) {
-                    console.log(`sorry, we only have ${data.stock_quantity} ${data.product_name} in stock. 
-                    You already have ${userCart[data.id].amount} ${data.product_name} in your cart.`)
+                    $(".alertTrue").hide();
+                    $(".alertFalse").show();
+                    $(".alertFalse").text(`sorry, we only have ${data.stock_quantity} ${data.product_name} in stock. 
+                    You already have ${userCart[data.id].amount} ${data.product_name} in your cart.`);
                 } else {
+                    $(".alertTrue").show();
+                    $(".alertFalse").hide();
+                    $(".alertTrue").text(`Added ${amount} ${data.product_name} to cart.`);
                     userCart[data.id].amount += amount;
                 }
             } else {
+                $(".alertTrue").show();
+                $(".alertFalse").hide();
+                $(".alertTrue").text(`Added ${amount} ${data.product_name} to cart.`);
                 userCart[data.id] = item;
             }
         } else {
-            console.log(`sorry, we only have ${data.stock_quantity} ${data.product_name} in stock`);
+            $(".alertTrue").hide();
+            $(".alertFalse").show();
+            $(".alertFalse").text(`sorry, we only have ${data.stock_quantity} ${data.product_name} in stock`);
         }
     })
 }
