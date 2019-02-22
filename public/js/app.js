@@ -171,6 +171,9 @@ const checkOut = function () {
     };
 }
 
+$(".alertTrue").hide();
+$(".alertFalse").hide();
+
 $("#deptRow").on("click", ".deptBtn", render);
 
 $("#mainDisplay").on("click", ".addCart", addToCart);

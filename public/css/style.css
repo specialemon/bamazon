@@ -49,3 +49,7 @@ input {
 .cartDiv {
     margin-bottom: 15px;
 }
+
+.alerts {
+    height: 60px;
+}
