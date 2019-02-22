@@ -120,7 +120,7 @@ const renderCart = function () {
         $("#myCartBody").append(template);
         $("#myCartBody").append("<hr>");
     }
-    $("#myCartBody").append(`<div class="row cartTotal">Total: $${total}</div>`);
+    $("#myCartBody").append(`<div class="row cartTotal"><div class="col cartTotal">Total: $${total}</div></div>`);
 }
 
 const checkOut = function () {
