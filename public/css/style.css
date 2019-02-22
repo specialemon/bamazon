@@ -1,0 +1,47 @@
+.center {
+    text-align: center;
+}
+
+input {
+    margin: 0 auto;
+    display:block;
+}
+
+.btn {
+    margin: 0 auto;
+    display:block;
+}
+
+.amountBox {
+    padding: 0 auto;
+}
+
+.amountInput {
+    width:50px;
+}
+
+#logo {
+    background:lightgray;
+    margin-bottom: 20px;
+}
+
+#deptRow {
+    background:lightblue;
+    border: 2px solid lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.mainListHead, .mainList {
+    background:lightcyan;
+    border: 2px solid lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+
+.cartList, .cartHead {
+    text-align: center;
+}
